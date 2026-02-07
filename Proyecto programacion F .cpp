@@ -2,7 +2,7 @@
 #include <string>
 #include <iomanip>
 #include <limits>
-#include <vector>  // ¡Ahora sí se usa!
+#include <vector>  
 
 using namespace std;
 
@@ -441,3 +441,4 @@ int main() {
     
     return 0; 
 }
+
