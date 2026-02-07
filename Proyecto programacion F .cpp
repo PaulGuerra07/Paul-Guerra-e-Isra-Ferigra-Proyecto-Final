@@ -275,7 +275,7 @@ void analizar_Coleccion(const Album coleccion[], int numAlbumes) {
 
 // Función para filtrar álbumes y almacenarlos en un VECTOR
 vector<Album> filtrar_Por_Criterio(const Album coleccion[], int numAlbumes) {
-    vector<Album> albumesFiltrados;  // ¡Aquí está el VECTOR!
+    vector<Album> albumesFiltrados;  
     
     cout << "\n FILTRAR ALBUMES " << endl;
     cout << "Seleccione criterio de filtrado:" << endl;
@@ -341,7 +341,7 @@ vector<Album> filtrar_Por_Criterio(const Album coleccion[], int numAlbumes) {
             
             for (int i = 0; i < numAlbumes; ++i) {
                 if (coleccion[i].formato == formatoBuscar || 
-                    coleccion[i].formato == (formatoBuscar + 32)) { // minúscula
+                    coleccion[i].formato == (formatoBuscar + 32)) { 
                     albumesFiltrados.push_back(coleccion[i]);
                 }
             }
@@ -441,4 +441,5 @@ int main() {
     
     return 0; 
 }
+
 
